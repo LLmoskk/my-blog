@@ -6,15 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'LLmoskk blog',
+  url: 'https://llmoskk.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'LLmoskk', // Usually your GitHub org/user name.
+  projectName: 'my-blog', // Usually your repo name.
 
   presets: [
     [
@@ -23,7 +22,9 @@ const config = {
       ({
         blog: {
           blogSidebarTitle: '全部博文',
-          blogSidebarCount: 'ALL',
+          blogSidebarCount: 0,
+          path: './blog',
+          routeBasePath: '/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -36,13 +37,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'LLmoskk',
         logo: {
-          alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/LLmoskk',
             label: 'GitHub',
@@ -52,7 +52,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} HJY01111`,
+        copyright: `Copyright © ${new Date().getFullYear()} LLmoskk`,
       },
       prism: {
         theme: lightCodeTheme,
