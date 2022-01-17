@@ -50,11 +50,12 @@ const config = {
           },
         ],
       },
-      // algolia: {
-      //   apiKey: "fabfb0e9997e101154ed85d64b7b6a3c",
-      //   indexName: "ZXUQIANCN",
-      //   appId: "LIJMO3C9C4",
-      // },
+      algolia: {
+        apiKey: "e2ea3f0de612f9fa8e1df964fd4cbe29",
+        indexName: "llmoskk",
+        appId: "XANKVBL3NE",
+      },
+
       footer: {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} LLmoskk`,
